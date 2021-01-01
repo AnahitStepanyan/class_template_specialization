@@ -46,12 +46,11 @@ class Node {
             return -1;
         int left_h = height(root->left);
         int right_h = height(root->right);
-        int max;
+        
         if(left_h > right_h)
-            max = left_h+1;
+            return left_h+1;
         else
-            max = right_h+1;
-        return max;
+            return right_h+1;
     }
 
 }; //End of Solution
